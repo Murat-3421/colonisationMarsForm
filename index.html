@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Colonization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="/apply/" id="mars-once" method="POST">
+       <label>
+        <span class="input-title">Your Name:</span>
+        <input 
+            class="input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter Name: "
+            required
+            autofocus
+            >
+       </label>
+
+       <label>
+        <span class="input-title">Email:</span>
+            <input 
+            class="input"
+            type="email" 
+            name="email" 
+            id="email"
+            placeholder="example@gmail.com"
+            required>
+       </label>
+
+       <label>
+        <span class="input-title">Age:</span>
+            <input 
+                class="input"
+                type="number"
+                name="age" 
+                placeholder="More 18 less 50"
+                required>
+       </label>
+
+       <label>
+        <span class="input-title">Job:</span>
+            <select name="specialization" required>
+                <option value="engineer" selected>Engineer</option>
+                <option value="scientist" selected>Scientist</option>
+                <option value="psyhologist" selected>Psyhologist</option>
+                <option value="other" selected>Other</option>
+            </select>
+       </label>
+
+       <label>
+                <span class="input-title">I worked in NASA</span>
+                <div class="checkbox wrapper">
+                    <input  class="checkbox" type="checkbox" name="nasa-experience" value="1">
+                    <span class="checkbox-title"></span>
+                </div>
+                
+       </label>
+
+       <label>
+        <span class="input-title">Photo:</span>
+            <input
+                class="input" 
+                type="file"
+                accept="image/jpeg"
+                name="photo"
+                required>
+       </label>
+
+       <button input="submit" class="button">Submit Action</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
